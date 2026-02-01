@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikya Chits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="Manikya Chits">
+      </div>
+        
+      <!-- HAMBURGER -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+      <!-- MENU -->
+      <ul class="menu" id="menu">
+
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" >
+            About Us <span class="arrow">▾</span>
+          </a>
+          <ul class="dropdown">
+            <li><a href="about.html">Company Overview</a></li>
+            <li><a href="management.html">Management</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="chitplan.html">Chit Plans</a>
+        </li>
+
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="contact.html">
+            Contact Us <span class="arrow">▾</span>
+          </a>
+          <ul class="dropdown">
+            <li><a href="contact.html">Contact Details</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  <!-- HERO CONTENT (UNCHANGED) -->
+  <div class="hero-inner">
+    <div class="hero-content">
+
+      <div class="hero-text">
+        <h1>
+          Trusted by Lakhs<br>
+          Approved by Government<br>
+          Driven by Technology
+        </h1>
+
+        <p>Your Smart Savings Journey Begins with Manikya Chits.</p>
+
+        <div class="buttons">
+          <button class="btn white">View gov certificate →</button>
+          <button class="btn dark">Chit Plans →</button>
+        </div>
+
+        <div class="store-box">
+          <span class="small">Now available on</span>
+          <div class="stores">
+            <img src="appstore.png">
+            <img src="playstore.png">
+          </div>
+          <div class="features">
+            <span>✔ no paperwork</span>
+            <span>✔ Fast acceptance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="video-card">
+          <img src="hero.jpg" alt="">
+          <span class="play">▶</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="chit-section">
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="icon">👥</span>
+      <div>
+        <h3>108,000+</h3>
+        <p>Happy subscribers</p>
+      </div>
+    </div>
+
+    <div class="stat">
+      <span class="icon">👨‍💼</span>
+      <div>
+        <h3>1,000+</h3>
+        <p>Employees</p>
+      </div>
+    </div>
+
+    <div class="stat">
+      <span class="icon">➕</span>
+      <div>
+        <h3>50+</h3>
+        <p>Branches</p>
+      </div>
+    </div>
+
+    <div class="stat">
+      <span class="icon">🧑</span>
+      <div>
+        <h3>1,500+</h3>
+        <p>Adviser</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TITLE -->
+  <h2 class="section-title">
+    Our Chit Plans are Simple, Transparent and Trustworthy
+  </h2>
+
+  <!-- CARDS GRID -->
+  <div class="plans-grid">
+
+    <!-- CARD -->
+    <div class="plan-card">
+      <div class="coin bronze"><img src="assets/images/plans/2l.png" alt="2 Lakh Plan"></div>
+      <h4>2 Lakh Chit Plan<span>/12 months</span></h4>
+      <p>Invest ₹16,667 / Earn up to ₹3,333 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin bronze"><img src="assets/images/plans/3l.png" alt="3 Lakh Plan"></div>
+      <h4>3 Lakh Chit Plan<span>/25 months</span></h4>
+      <p>Invest ₹12,000 / Earn up to ₹3,000 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin bronze"><img src="assets/images/plans/5l.png" alt="5 Lakh Plan"></div>
+      <h4>5 Lakh Chit Plan<span>/40 months</span></h4>
+      <p>Invest ₹12,500 / Earn up to ₹4,375 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin silver"><img src="assets/images/plans/10l.png" alt="10 Lakh Plan"></div>
+      <h4>10 Lakh Chit Plan<span>/30 months</span></h4>
+      <p>Invest ₹33,333 / Earn up to ₹8,333 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin silver"><img src="assets/images/plans/15l.png" alt="15 Lakh Plan"></div>
+      <p>Invest ₹37,500 / Earn up to ₹13,125 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin gold"><img src="assets/images/plans/25l.png" alt="25 Lakh Plan"></div>
+      <h4>25 Lakh Chit Plan<span>/40 months</span></h4>
+      <p>Invest ₹62,500 / Earn up to ₹21,875 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin gold"><img src="assets/images/plans/50l.png" alt="50 Lakh Plan"></div>
+      <h4>50 Lakh Chit Plan<span>/25 months</span></h4>
+      <p>Invest ₹2,00,000 / Earn up to ₹50,000 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+
+    </div>
+
+    <div class="plan-card">
+      <div class="coin gold"><img src="assets/images/plans/2l.png" alt="1 Crore Plan"></div>
+      <h4>1 Crore Chit Plan<span>/40 months</span></h4>
+      <p>Invest ₹2,50,000 / Earn up to ₹87,500 dividend / month</p>
+      <a href="javascript:void(0)" class="outline-btn" onclick="openModal()">View Details →</a>
+    </div>
+
+  </div>
+
+<!-- ================= VIEW DETAILS MODAL ================= -->
+ 
+<div class="assist-modal" id="assistModal">
+  <div class="assist-box">
+
+    <button class="assist-close" onclick="closeModal()">×</button>
+
+    <h2>Get Personalized Assistance Now</h2>
+
+    <div class="assist-form">
+
+      <div class="field">
+        <input type="text" id="mobile" placeholder="Verify Mobile Number">
+        <small class="error">Mobile number is required</small>
+      </div>
+
+      <div class="field">
+        <input type="text" id="name" placeholder="Name">
+        <small class="error">Name is required</small>
+      </div>
+
+      <div class="field">
+        <input type="email" id="email" placeholder="Email">
+        <small class="error">Email is required</small>
+      </div>
+
+    </div>
+
+    <button class="assist-btn" onclick="validateModal()">Continue →</button>
+
+  </div>
+</div>
+
+  <!-- BOTTOM CTA -->
+  <div class="cta-row">
+    <a class="outline-btn">Personalize your chit plan →</a>
+    <a href="chitplan.html" class="solid-btn">Find all scheme →</a>
+  </div>
+
+</section>
+<section class="about-section">
+  <div class="about-content">
+    <h2>About Us</h2>
+
+    <p>
+      ManikyaChits Private Limited is a government-approved chit fund company
+      with over 20 years of trusted service in Karnataka's financial sector.
+      Established in 2006 in Bengaluru, ManikyaChits is the flagship entity
+      of the ManikyaGroup of Companies and is widely recognized as
+      Karnataka's leading chit fund provider.
+    </p>
+
+    <a href="about.html#about-us" class="about-btn">Read More →</a>
+  </div>
+
+  <div class="about-image-box">
+    <img src="assets\images\image.png" alt="About ManikyaChits">
+  </div>
+</section>
+
+<section class="why-section">
+  <h2 class="why-title">Why ManikyaChits?</h2>
+
+  <div class="why-box">
+
+    <div class="why-grid">
+
+      <!-- ITEM -->
+      <div class="why-item">
+        <img src="assets/icons/chit-kart.svg" alt="">
+        <h4>Chit Kart – Your All-in-One Chit Fund App</h4>
+        <p>
+          With our user-friendly Chit Kart app, managing your account has never been easier.
+          You can effortlessly track payments, bids, transactions, and your balance in real time.
+          Available on both Android and iOS, the app ensures a seamless and secure digital experience.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/transparency.svg" alt="">
+        <h4>100% Transparency, Total Control</h4>
+        <p>
+          ManikyaChits is committed to full transparency, giving you clear access to all records
+          and transactions. What you see is exactly what you get — with absolutely no hidden charges.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/payment.svg" alt="">
+        <h4>Multiple Payment Options for Convenience</h4>
+        <p>
+          We support payments through UPI, Net Banking, and offline modes, giving you flexibility.
+          All digital transactions are encrypted and secure.
+        </p>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="why-item">
+        <img src="assets/icons/compliant.svg" alt="">
+        <h4>Fully Compliant with the Chit Funds Act</h4>
+        <p>
+          We strictly operate under Government of India guidelines and adhere to Karnataka Chit Fund Rules.
+          Compliance and trust are hallmarks of our service.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/online.svg" alt="">
+        <h4>End-to-End Online Services</h4>
+        <p>
+          From joining a chit to bidding and receiving funds — everything can be done on your phone.
+          The entire journey is fully digital and paperless.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/eagreement.svg" alt="">
+        <h4>Secure E-Agreements at Your Fingertips</h4>
+        <p>
+          All agreements are legally valid, digitally signed, and stored securely.
+          You can access or download them anytime.
+        </p>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="why-item">
+        <img src="assets/icons/manager.svg" alt="">
+        <h4>Dedicated Relationship Manager</h4>
+        <p>
+          Each subscriber is assigned a relationship manager for personalized support
+          throughout the chit lifecycle.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/reminder.svg" alt="">
+        <h4>Never Miss a Due Date</h4>
+        <p>
+          Stay updated with automated SMS alerts, app notifications, and email reminders
+          to ensure timely payments.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="why-item">
+        <img src="assets/icons/support.svg" alt="">
+        <h4>Responsive Customer Support</h4>
+        <p>
+          Our trained support team provides quick resolutions via app, call, or WhatsApp
+          with multi-lingual assistance.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="app-section">
+  <div class="app-card">
+    <div class="app-overlay"></div>
+
+    <div class="app-content">
+      <h2>Get the mobile app</h2>
+      <p class="powered">Powered by Chit Kart</p>
+
+      <div class="app-logo">
+        <img src="images/chitkart-logo.png" alt="Chit Kart">
+      </div>
+
+      <h4>Smart Saving Starts Here.</h4>
+
+      <p class="desc">
+        Download the app to select your chit plans and enroll today.
+        With Chit Kart, you can bid in e-auctions, track your accounts,
+        and make secure payments — all from your mobile.
+      </p>
+
+      <div class="store-buttons">
+        <a href="#">
+          <img src="images/appstore.png" alt="App Store">
+        </a>
+        <a href="#">
+          <img src="images/playstore.png" alt="Google Play">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-about">
+      <img src="images/logo.png" class="footer-logo" alt="ManikyaChits">
+
+      <p>
+        ManikyaChits Pvt Ltd (KCPL) is a government-approved chit fund
+        company that has been in the industry for over 20 years.
+      </p>
+
+      <address>
+       ***************
+       
+      </address>
+
+      <p><strong>Talk to Advisor:</strong> +91 7090666444</p>
+      <p><strong>Support:</strong> 1800 103 0794</p>
+      <p><strong>E-Mail:</strong> info@mykcpl.com</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#management">Management</a></li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="chitplan.html">Chit Plans</a></li>
+        <li><a href="#">Branches</a></li>
+      </ul>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Suggestions / Feedback</a></li>
+      </ul>
+    </div>
+
+    <!-- RESOURCES -->
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="about.html#cirtificate ">Certificate</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    2025 © ManikyaChits Pvt Ltd (KCPL). All rights reserved.
+  </div>
+</footer>
+<script src="main.js"></script>
+
+
+</body>
+</html>
