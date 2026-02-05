@@ -1419,8 +1419,8 @@ body {
     }
 }
 :root {
-    --primary-green: #045819;  /* Your accent green */
-    --dark-bg-green: #0b3a2d ; /* Your deep background green */
+    --primary-green: #0d842a;  /* Your accent green */
+    --dark-bg-green: #13906c ; /* Your deep background green */
     --text-dark: #333;
     --text-gray: #666;
     --white: #ffffff;
@@ -1468,7 +1468,7 @@ body {
 
 /* FOOTER STYLING */
 .kcpl-footer {
-    background: var(--white);
+    background: #eef8f4;
     padding-top: 80px;
     border-top: 1px solid #eee;
 }
