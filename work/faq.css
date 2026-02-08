@@ -138,60 +138,63 @@ body {
   margin-bottom: 50px;
 }
 
+/* ================= FAQ ACCORDION ================= */
+
 /* FAQ CARD */
 .faq-item {
   background: #ffffff;
   border-radius: 18px;
-  padding: 28px 30px;
   margin-bottom: 22px;
   box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+  overflow: hidden;
 }
 
 /* QUESTION */
 .faq-question {
+  width: 100%;
   background: none;
   border: none;
-  padding: 0;
+  padding: 22px 28px;
   font-size: 18px;
   font-weight: 600;
   color: #0f5132;
-  margin-bottom: 14px;
-  cursor: default;
-  text-align: left;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* REMOVE + ICON */
+/* PLUS ICON */
 .faq-question span,
-.faq-question .faq-icon {
-  display: none;
+.faq-icon {
+  font-size: 26px;
+  font-weight: 400;
+  transition: transform 0.3s ease;
 }
 
-/* ANSWER */
+/* ANSWER (collapsed by default) */
 .faq-answer {
-  max-height: none;
-  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 28px;
   font-size: 15.5px;
   line-height: 1.8;
   color: #374151;
+  transition: all 0.35s ease;
 }
 
-.faq-answer p {
-  margin-bottom: 14px;
+/* OPEN STATE */
+.faq-item.active .faq-answer {
+  max-height: 2000px; /* large for long answers */
+  padding: 0 28px 26px;
 }
 
-.faq-answer strong {
-  display: block;
-  margin: 14px 0 6px;
-  color: #0f5132;
+.faq-item.active .faq-question span,
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* + → × */
 }
 
-.faq-answer ul {
-  margin: 10px 0 16px 22px;
-}
-
-.faq-answer li {
-  margin-bottom: 8px;
-}
 
 /* FAQ BUTTON */
 .faq-answer-with-btn {
@@ -306,25 +309,72 @@ body {
   }
 }
 
-/* ================= FOOTER ================= */
-.site-footer {
-  background: linear-gradient(135deg, #e7f6ef, #ffffff);
-  padding-top: 70px;
+/* FOOTER STYLING */
+.kcpl-footer {
+    background: #eef8f4;
+    padding-top: 80px;
+    border-top: 1px solid #eee;
 }
 
-.footer-container {
-  max-width: 1300px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 2.2fr repeat(4, 1fr);
-  gap: 40px;
-  padding: 0 20px 60px;
+.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 60px;
 }
 
-.footer-bottom {
-  background: #198754;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px;
-  font-size: 14px;
+.footer-logo-img { width: 160px; margin-bottom: 25px; }
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.footer-links { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links li a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover { color: var(--primary-green); padding-left: 5px; }
+
+.company-description { font-size: 0.95rem; line-height: 1.6; color: var(--text-gray); margin-bottom: 25px; }
+
+.contact-info p { font-size: 0.9rem; margin-bottom: 8px; color: var(--text-dark); }
+.green-text { color: var(--primary-green); font-weight: 500; }
+
+/* SOCIAL ICONS */
+.social-links { display: flex; gap: 15px; margin-top: 25px; }
+.social-icon {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: #f0f0f0; color: #004a99; /* Based on screenshot blue or use green */
+    display: flex; align-items: center; justify-content: center;
+    transition: 0.3s; text-decoration: none;
+}
+.social-icon:hover { background: var(--primary-green); color: var(--white); }
+
+.mt-30 { margin-top: 30px; }
+
+/* COPYRIGHT STRIP */
+.footer-bottom-strip {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .app-container { flex-direction: column; text-align: center; padding: 40px 20px; }
+    .app-left { padding-right: 0; margin-bottom: 40px; }
+    .footer-main { grid-template-columns: 1fr 1fr; }
+    .info-col { grid-column: span 2; }
 }
